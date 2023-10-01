@@ -32,6 +32,16 @@
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\Repository\" />
+    <Folder Include="Controllers\Service\" />
+    <Folder Include="Controllers\Request\" />
+    <Folder Include="Models\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\Schema\" />
+    <Folder Include="Models\ViewModel\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
     <VisualStudio>
