@@ -28,6 +28,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Routs\Route.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -40,6 +43,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\Schema\" />
     <Folder Include="Models\ViewModel\" />
+    <Folder Include="Routs\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
