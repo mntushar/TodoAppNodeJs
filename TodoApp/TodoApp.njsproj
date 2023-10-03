@@ -28,7 +28,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Router\Router.js">
+    <Content Include=".env" />
+    <Content Include="Routes\Router.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="server.js" />
@@ -43,10 +44,9 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\Schema\" />
     <Folder Include="Models\ViewModel\" />
-    <Folder Include="AppConfig\" />
     <Folder Include="Public\" />
     <Folder Include="Public\Css\" />
-    <Folder Include="Router\" />
+    <Folder Include="Routes\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />

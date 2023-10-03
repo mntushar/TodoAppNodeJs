@@ -1,8 +1,19 @@
-'use strict';
-var http = require('http');
-var port = process.env.PORT || 1337;
+const express = require("express");
+const dotenv = require("dotenv");
 
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
+
+//create app
+const app = express();
+
+//config app
+dotenv.config();
+
+//app route
+app.get('/', (req, res) => {
+    res.send('hello world')
+})
+
+//start app
+app.listen(process.env.PORT, () => {
+    console.log(process.env.PORT);
+});
