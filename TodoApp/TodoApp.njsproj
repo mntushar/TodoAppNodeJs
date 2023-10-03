@@ -28,7 +28,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Router\Route.js">
+    <Content Include="Router\Router.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="server.js" />
@@ -43,6 +43,9 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\Schema\" />
     <Folder Include="Models\ViewModel\" />
+    <Folder Include="AppConfig\" />
+    <Folder Include="Public\" />
+    <Folder Include="Public\Css\" />
     <Folder Include="Router\" />
     <Folder Include="Views\" />
   </ItemGroup>
