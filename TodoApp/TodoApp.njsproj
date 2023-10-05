@@ -29,6 +29,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".env" />
+    <Content Include="Library\Middleware\Common\ErrorHandel.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Routes\Router.js">
       <SubType>Code</SubType>
     </Content>
@@ -40,10 +43,13 @@
     <Folder Include="Controllers\Repository\" />
     <Folder Include="Controllers\Service\" />
     <Folder Include="Controllers\Request\" />
+    <Folder Include="Library\Middleware\" />
+    <Folder Include="Library\Middleware\Common\" />
     <Folder Include="Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\Schema\" />
     <Folder Include="Models\ViewModel\" />
+    <Folder Include="Library\" />
     <Folder Include="Public\" />
     <Folder Include="Public\Css\" />
     <Folder Include="Routes\" />
