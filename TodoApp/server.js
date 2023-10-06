@@ -24,13 +24,13 @@ mongoes.connect(process.env.DataBaseConnetionString)
     .then(() => console.log("Success connection..."))
     .catch((err) => console.log(err));
 
-//app route
-app.get('/', (req, res) => {
-    res.send('hello world')
-})
-
 //setup view engine
 app.set("view engine", "ejs");
+
+//app route
+app.get('/', (req, res) => {
+    res.render("Shared/BaseLayout")
+})
 
 //start app
 app.listen(process.env.AppPort, () => {

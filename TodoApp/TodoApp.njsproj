@@ -38,6 +38,7 @@
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="Views\Shared\BaseLayout.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\Repository\" />
@@ -54,6 +55,7 @@
     <Folder Include="Public\Css\" />
     <Folder Include="Routes\" />
     <Folder Include="Views\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
