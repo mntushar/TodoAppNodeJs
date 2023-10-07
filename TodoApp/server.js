@@ -1,6 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const mongoes = require("mongoose");
+const mongoose = require("mongoose");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 
@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, "Public")));
 app.use(cookieParser(process.env.CookieSecret));
 
 //db connection
-mongoes.connect(process.env.DataBaseConnetionString)
+mongoose.connect(process.env.DataBaseConnetionString)
     .then(() => console.log("Success connection..."))
     .catch((err) => console.log(err));
 
