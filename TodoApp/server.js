@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const path = require("path");
 const cookieParser = require("cookie-parser");
+const baseRouter = require("./Routes/Router");
 
 
 //create app
@@ -28,9 +29,7 @@ mongoose.connect(process.env.DataBaseConnetionString)
 app.set("view engine", "ejs");
 
 //app route
-app.get('/', (req, res) => {
-    res.render("Shared/BaseLayout")
-})
+app.use("/", baseRouter);
 
 //start app
 app.listen(process.env.AppPort, () => {
