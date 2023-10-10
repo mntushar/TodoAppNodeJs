@@ -29,16 +29,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".env" />
-    <Content Include="Library\Middleware\Common\ErrorHandel.js">
+    <Content Include="Controllers\Request\Home.js" />
+    <Content Include="Library\Middleware\Common\Error.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Routes\Home.js" />
     <Content Include="Routes\Router.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="Views\Shared\BaseLayout.html" />
+    <Content Include="Views\Error\Error.ejs" />
+    <Content Include="Views\Shared\BaseLayout.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\Repository\" />
@@ -55,6 +58,7 @@
     <Folder Include="Public\Css\" />
     <Folder Include="Routes\" />
     <Folder Include="Views\" />
+    <Folder Include="Views\Error\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />

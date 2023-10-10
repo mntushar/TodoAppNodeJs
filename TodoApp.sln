@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TodoApp", "TodoApp\TodoApp.njsproj", "{838096EB-D6C5-41C3-8BFC-54C6F7041FAD}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{22AFE498-3BB8-4FE5-B491-1D1F145BA523}"
 	ProjectSection(SolutionItems) = preProject
 		package-lock.json = package-lock.json
 		package.json = package.json
 	EndProjectSection
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TodoApp", "TodoApp\TodoApp.njsproj", "{838096EB-D6C5-41C3-8BFC-54C6F7041FAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

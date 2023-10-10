@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const baseRouter = require("./Routes/Router");
+const errorMiddleware = require("./Library/Middleware/Common/Error")
 
 
 //create app
@@ -30,6 +31,10 @@ app.set("view engine", "ejs");
 
 //app route
 app.use("/", baseRouter);
+
+//error middleware
+app.use(errorMiddleware.NotFound);
+//app.use(errorMiddleware.DefaultError);
 
 //start app
 app.listen(process.env.AppPort, () => {
